@@ -26,18 +26,18 @@ public class CircleArrayQueue {
             key = scanner.next().charAt(0);
             switch (key) {
                 case 's':
-                    arrayQueue.showQueue();
+                    circleArray.showQueue();
                     break;
 
                 case 'a':
                     System.out.println("input a num!");
                     int num = scanner.nextInt();
-                    arrayQueue.addQueue(num);
+                    circleArray.addQueue(num);
                     break;
 
                 case 'g':
                     try {
-                        int res = arrayQueue.getQueue();
+                        int res = circleArray.getQueue();
                         System.out.println(res);
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
@@ -46,7 +46,7 @@ public class CircleArrayQueue {
 
                 case 'h':
                     try {
-                        System.out.println(arrayQueue.headQueue());
+                        System.out.println(circleArray.headQueue());
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
                     }
