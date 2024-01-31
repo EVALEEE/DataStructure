@@ -152,6 +152,24 @@ class SingleLinkedList_ {
             temp = temp.next;
         }
     }
+
+    //方法： 获取到单链表的节点的个数
+    /**
+     * @param head 链表的头节点
+     * @return 返回的是 有效节点的个数
+     */
+    public static int getLength(HeroNode head) {
+        if (head.next == null) {
+            return 0;
+        }
+        int length = 0;
+        HeroNode cur = head.next;
+        while (cur != null) {
+            length++;
+            cur = cur.next;
+        }
+        return length;
+    }
 }
 
 //================================================================
