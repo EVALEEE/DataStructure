@@ -10,7 +10,6 @@ public class Josepfu {
         CircleSingleLinkedList circleSingleLinkedList = new CircleSingleLinkedList();
         circleSingleLinkedList.addBoy(5);
         circleSingleLinkedList.showBoy();
-
         circleSingleLinkedList.countBoy(1, 2, 5);
         //2-4-1-5-3
     }
